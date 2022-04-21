@@ -2322,7 +2322,7 @@ h5.modal-title {
     tr {
       border-bottom: 1px solid #F2F2F2;
       &:first-child {
-        border-bottom: 2px solid #DD2B1C;
+        b9order-bottom: 2px solid #DD2B1C;
         td {
          color:#000000;
          font-weight: 400;
@@ -2349,7 +2349,7 @@ h5.modal-title {
   &__sliders {
     display: flex;
     position: sticky;
-    top: 20px;
+    top: 90px;
     left: 0;
     .mySwiper2 {
       .swiper-slide {
@@ -2674,7 +2674,7 @@ h5.modal-title {
 }
 
 .man-section {
-  overflow: hidden;
+  // overflow: hidden;
   margin: 88px 0 0;
   @extend %smooth;
 }

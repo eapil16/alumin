@@ -2807,7 +2807,7 @@ h5.modal-title {
 }
 
 .table-block table tr:first-child {
-  border-bottom: 2px solid #DD2B1C;
+  b9order-bottom: 2px solid #DD2B1C;
 }
 
 .table-block table tr:first-child td {
@@ -2841,7 +2841,7 @@ h5.modal-title {
   display: flex;
   position: -webkit-sticky;
   position: sticky;
-  top: 20px;
+  top: 90px;
   left: 0;
 }
 
@@ -3236,7 +3236,6 @@ h5.modal-title {
 }
 
 .man-section {
-  overflow: hidden;
   margin: 88px 0 0;
 }
 
