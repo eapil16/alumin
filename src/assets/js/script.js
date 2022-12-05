@@ -388,6 +388,88 @@ document.addEventListener('DOMContentLoaded', () => {
   $(e.target).closest('div').find('.second-level').show();
   });
 
+  // 05 12
+  var checkboxes = '';
+  document.querySelector('body').addEventListener('click', e => {
+    if (e.target.closest('.catalog-filter__block_button')) {
+
+      const collection = document.querySelectorAll('.catalog-filter__block');
+      collection.forEach(el => el.classList.remove('active'));
+
+      e.target.closest('.catalog-filter__block').classList.add('active');
+      
+    }
+    if (!e.target.closest('.catalog-filter__block_button') && !e.target.closest('.catalog-filter__block_dropdown')) {
+      const collection = document.querySelectorAll('.catalog-filter__block');
+      collection.forEach(el => el.classList.remove('active'));
+    }
+
+    let values = [];
+    let count = 0; 
+
+    // if (e.target.closest('.chekbox')) {
+      
+    //   const parent = e.target.closest('.catalog-filter__block')
+    //   let box = parent.querySelectorAll('.input-checkbox');
+    //   const target = e.target.closest('.catalog-filter__block').querySelector('.text-input');
+      
+    //   box.forEach((element) => {
+    //     if (element.checked) {   
+    //       parent.classList.add('black')      
+    //       values.push(element.value);
+    //       target.textContent = values.join(',');
+    //     }         
+    //   });
+    //   itogo = values;
+    //   box.forEach((element) => {
+    //     if (element.checked) {          
+    //      count++;
+    //     }         
+    //   });
+    //   if (count === 0) {
+    //     target.textContent = '';
+    //   }
+
+      
+    // }
+
+    if (e.target.closest('.catalog-filter__block .button')) {
+      e.preventDefault();
+      const parent = e.target.closest('.catalog-filter__block')
+      let box = parent.querySelectorAll('.input-checkbox');
+      const target = e.target.closest('.catalog-filter__block').querySelector('.text-input');
+      
+      box.forEach((element) => {
+        if (element.checked) {   
+          parent.classList.add('black')      
+          values.push(element.value);
+         
+        }         
+      });
+      box.forEach((element) => {
+        if (element.checked) {          
+         count++;
+        }         
+      });
+      if (count === 0) {
+        target.textContent = '';
+        parent.classList.remove('black');
+        parent.classList.remove('active');
+      } else {
+        parent.classList.add('black');
+        parent.classList.remove('active');
+      }
+      target.textContent = values.join(',');
+
+    }
+    
+    if (e.target.closest('.catalog-filter__block .link-clear')) {
+      e.preventDefault();
+      console.log(1)
+  
+    }
+  }); 
+
 
  	
 

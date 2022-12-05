@@ -271,6 +271,7 @@
                 <div class="filter-botton"> <img src="assets/images/filter.svg" alt=""></div>
               </div>
               <div class="catalog-content__flex">
+               
                 <div class="catalog-content__flex_sidebar">
                   <div class="catalog-content__menu">											
                     <ul class="catalog-list">
@@ -322,114 +323,182 @@
                       <li class="catalog-list__item"> <a class="catalog-list__link" href="#">Изоляционная полоса кросс платы  </a></li>
                     </ul>
                   </div>
-                  <div class="accordion" id="accordionExample">
-                    <div class="accordion-item"><span class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Глубина</button></span>
-                      <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <div class="chekbox">
-                            <p>
-                              <input type="checkbox" id="id-1" checked="checked">
-                              <label for="id-1">185</label>
-                            </p>
-                            <p>
-                              <input type="checkbox" id="id-2" checked="checked">
-                              <label for="id-2">245</label>
-                            </p>
-                            <p>
-                              <input type="checkbox" id="id-3">
-                              <label for="id-3">285</label>
-                            </p>
-                            <p>
-                              <input type="checkbox" id="id-4">
-                              <label for="id-4">305</label>
-                            </p>
-                            <p>
-                              <input type="checkbox" id="id-5">
-                              <label for="id-5">345</label>
-                            </p>
-                            <p>
-                              <input type="checkbox" id="id-6">
-                              <label for="id-6">405</label>
-                            </p>
-                          </div>
-                        </div>
+                </div>
+
+                <div class="catalog-content__flex_content">
+
+                  <div class="catalog-filter">
+                    <div class="catalog-filter__block">
+                      <div class="catalog-filter__block_button">
+                        <p class="catalog-filter__block_button-name">
+                          Серия 
+                          <span  class="text-input"></span>
+                        </p>
+                        <a href="#" class="link-clear">
+                          <img src="assets/images/clear.svg" alt="">
+                        </a>
                       </div>
                     </div>
-                    <div class="accordion-item"><span class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Ширина</button></span>
-                      <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <div class="chekbox">
-                            <p>
-                              <input type="checkbox" id="id-11">
-                              <label for="id-11">157,5 mm</label>
-                            </p>
-                            <p>
-                              <input type="checkbox" id="id-12">
-                              <label for="id-12">162.5 mm</label>
-                            </p>
-                            <p>
-                              <input type="checkbox" id="id-13" checked="checked">
-                              <label for="id-13">198.1 mm</label>
-                            </p>
-                            <p>
-                              <input type="checkbox" id="id-14">
-                              <label for="id-14">259.1 mm</label>
-                            </p>
-                            <p>
-                              <input type="checkbox" id="id-15">
-                              <label for="id-15">375.9 mm</label>
-                            </p>
-                            <p class="disabled">
-                              <input type="checkbox" id="id-16" disabled>
-                              <label for="id-16">482.6 mm</label>
-                            </p>
-                          </div>
+                    <div class="catalog-filter__block">
+                      <div class="catalog-filter__block_button">
+                        <p class="catalog-filter__block_button-name">
+                          Глубина 
+                          <span  class="text-input"></span>
+                        </p>
+                        <a href="#" class="link-clear">
+                          <img src="assets/images/clear.svg" alt="">
+                        </a>
+                      </div>
+                      <div class="catalog-filter__block_dropdown">
+                        <div class="chekbox">
+                          <p class="chekbox-item">
+                            <input type="checkbox" id="id-1" class="input-checkbox" value="185">
+                            <label for="id-1">185</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="id-2" class="input-checkbox" value="245">
+                            <label for="id-2">245</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="id-3" class="input-checkbox" value="285">
+                            <label for="id-3">285</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="id-4" class="input-checkbox" value="305">
+                            <label for="id-4">305</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="id-5" class="input-checkbox" value="345">
+                            <label for="id-5">345</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="id-6" class="input-checkbox" value="405">
+                            <label for="id-6">405</label>
+                          </p>
                         </div>
+                        <a class="btn button button-red" href="#">Применить</a>
+                      </div>                     
+                    </div>
+                    <div class="catalog-filter__block">
+                      <div class="catalog-filter__block_button">
+                        <p class="catalog-filter__block_button-name">
+                          Ширина 
+                          <span  class="text-input"></span>
+                          <a href="#" class="link-clear">
+                            <img src="assets/images/clear.svg" alt="">
+                          </a>
+                        </p>
+                      </div>
+                      <div class="catalog-filter__block_dropdown">
+                        <div class="chekbox">
+                          <p>
+                            <input type="checkbox" id="id-11" class="input-checkbox" value="157,5 mm">
+                            <label for="id-11">157,5 mm</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="id-12" class="input-checkbox" value="162.5 mm">
+                            <label for="id-12">162.5 mm</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="id-13" class="input-checkbox" value="198.1 mm">
+                            <label for="id-13">198.1 mm</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="id-14" lass="input-checkbox" value="59.1 mm">
+                            <label for="id-14">259.1 mm</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="id-15" class="input-checkbox" value="375.9 mm">
+                            <label for="id-15">375.9 mm</label>
+                          </p>
+                          <p class="disabled">
+                            <input type="checkbox" id="id-16" disabled class="input-checkbox" value="482.6 mm">
+                            <label for="id-16">482.6 mm</label>
+                          </p>
+                        </div>
+                        <a class="btn button button-red" href="#">Применить</a>
                       </div>
                     </div>
-                    <div class="accordion-item"><span class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Высота</button></span>
-                      <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <div class="chekbox">
-                            <p class="disabled">
-                              <input type="checkbox" id="id-21" disabled>
-                              <label for="id-21">87.6 mm</label>
-                            </p>
-                            <p>
-                              <input type="checkbox" id="id-22">
-                              <label for="id-22">132.0 mm</label>
-                            </p>
-                            <p>
-                              <input type="checkbox" id="id-23" checked="checked">
-                              <label for="id-23">176.5 mm</label>
-                            </p>
-                            <p>
-                              <input type="checkbox" id="id-24">
-                              <label for="id-24">221.0 mm</label>
-                            </p>
-                            <p>
-                              <input type="checkbox" id="id-25">
-                              <label for="id-25">265.4 mm</label>
-                            </p>
-                            <p class="disabled">
-                              <input type="checkbox" id="id-26" disabled>
-                              <label for="id-26">354.2 mm</label>
-                            </p>
-                            <p class="disabled">
-                              <input type="checkbox" id="id-27" disabled>
-                              <label for="id-27">398.7 mm</label>
-                            </p>
-                          </div>
+                    <div class="catalog-filter__block">
+                      <div class="catalog-filter__block_button">
+                        <p class="catalog-filter__block_button-name">
+                          Высота
+                          <span  class="text-input"></span>
+                        </p>
+                        <a href="#" class="link-clear">
+                          <img src="assets/images/clear.svg" alt="">
+                        </a>
+                      </div>
+                      <div class="catalog-filter__block_dropdown">
+                        <div class="chekbox">
+                          <p class="disabled">
+                            <input type="checkbox" id="id-21" disabled class="input-checkbox" value="87.6 mm">
+                            <label for="id-21">87.6 mm</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="id-22" class="input-checkbox" value="132.0 mm">
+                            <label for="id-22">132.0 mm</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="id-23" class="input-checkbox" value="176.5 mm">
+                            <label for="id-23">176.5 mm</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="id-24" class="input-checkbox" value="221.0 mm">
+                            <label for="id-24">221.0 mm</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="id-25" class="input-checkbox" value="265.4 mm">
+                            <label for="id-25">265.4 mm</label>
+                          </p>
+                          <p class="disabled">
+                            <input type="checkbox" id="id-26" disabled class="input-checkbox" value="354.2 mm">
+                            <label for="id-26">354.2 mm</label>
+                          </p>
+                          <p class="disabled">
+                            <input type="checkbox" id="id-27" disabled class="input-checkbox" value="398.7 mm">
+                            <label for="id-27">398.7 mm</label>
+                          </p>
                         </div>
+                        <a class="btn button button-red" href="#">Применить</a>
                       </div>
                     </div>
                   </div>
-                  <div class="catalog-content__menu_button"><a class="btn button button-red" href="#">Применить</a><a class="btn button button-white" href="#">Очистить фильтр</a></div>
-                </div>
-                <div class="catalog-content__flex_content">
+
+                  <ul class="catalog-filter__list">
+                    <li class="active">
+                      <a href="#" class="selected">Название тега</a>
+                      <a href="#" class="delete">
+                        <img src="assets/images/del.svg" alt="">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">Перфорирование</a>
+                    </li>
+                    <li>
+                      <a href="#">Кронштейны</a>
+                    </li>
+                    <li>
+                      <a href="#">Фиксатор панели</a>
+                    </li>
+                    <li>
+                      <a href="#">Направляющие</a>
+                    </li>
+                    <li>
+                      <a href="#">Отбойники</a>
+                    </li>
+                    <li>
+                      <a href="#">Ролики</a>
+                    </li>
+                    <li>
+                      <a href="#">Задняя панель блочного каркаса</a>
+                    </li>
+                    <li>
+                      <a href="#">ЭМС для направляющей крейтовый</a>
+                    </li>
+                  </ul>
+
+
                   <div class="catalog-flex"> 
                     <div class="catalog-block">
                       <div class="catalog-block__image"> <a href="#">
